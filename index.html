@@ -82,20 +82,21 @@
 									    I would be the creative partner that works alongside you, helping to develop your brand that 
 									    makes a bold statement</p>
 									<ul class="list basic_info">
-										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 2025</a></li>
-										<li><a href="#"><i class="lnr lnr-phone-handset"></i> +237 654 099 543</a></li>
-										<li><a href="#"><i class="lnr lnr-envelope"></i> nteinpraises@gmail.com</a></li>
-										<li><a href="#"><i class="lnr lnr-home"></i> Douala Cameroon</a></li>
+										<li><a href="#"><i class="lnr lnr-calendar-full"></i><div  id="date" style="margin-left: 40px;">31st December, 2025</div> </a></li>
+										<li><a href="https://wa.me/237654099666" target="_blank"><i class="lnr lnr-phone-handset"></i> +237 654 099 543</a></li>
+										<li><a href="mailto:nteinpraises@gmail.com" target="_blank"><i class="lnr lnr-envelope"></i> nteinpraises@gmail.com</a></li>
+										<li><a href="https://www.google.com/maps/place/Douala+Cameroon" target="_blank"><i class="lnr lnr-home"></i> Douala Cameroon</a></li>
 									</ul>
 									<ul class="list personal_social">
-										<li><a href="https://www.facebook.com/nteinpraises.ankinimbom"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="https://x.com/NAnkinimbom"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="https://www.linkedin.com/in/ntein-praises-033349271/"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="https://github.com/Nteinpraises"><i class="fa fa-github"></i></a></li>
+										<li><a href="https://www.facebook.com/nteinpraises.ankinimbom" target="_blank"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://x.com/NAnkinimbom"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/ntein-praises-033349271/"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="https://github.com/Nteinpraises"  target="_blank"><i class="fa fa-github"></i></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
             </div>
@@ -539,5 +540,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
+		<script>
+             const dateElement = document.getElementById('date');
+             const options = { year: 'numeric', month: 'long', day: 'numeric' };
+             const currentDate = new Date().toLocaleDateString('en-US', options);
+
+            dateElement.innerHTML = currentDate;
+        </script>
+		
     </body>
 </html>
