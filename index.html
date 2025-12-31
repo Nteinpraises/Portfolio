@@ -20,15 +20,16 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
     </head>
+
     <body>
-        
+      <section id="home">
         <!--================Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu">
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container box_1620">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="contact.html"><img src="img/logo.png" alt=""></a>
+						<a class="navbar-brand logo_h" href="#contact"><img src="img/logo.png" alt=""></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -38,9 +39,9 @@
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="#about">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#services">Services</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -69,9 +70,9 @@
 									    makes a bold statement</p>
 									<ul class="list basic_info">
 										<li><a href="#"><i class="lnr lnr-calendar-full"></i><div  id="date" style="margin-left: 40px;">31st December, 2025</div> </a></li>
-										<li><a href="https://wa.me/237654099666" target="_blank"><i class="lnr lnr-phone-handset"></i> +237 654 099 543</a></li>
+										<li><a href="https://wa.me/237654099666" target="_blank"><i class="lnr lnr-phone-handset"></i>Call Me Now</a></li>
 										<li><a href="mailto:nteinpraises@gmail.com" target="_blank"><i class="lnr lnr-envelope"></i> nteinpraises@gmail.com</a></li>
-										<li><a href="https://www.google.com/maps/place/Douala+Cameroon" target="_blank"><i class="lnr lnr-home"></i> Douala Cameroon</a></li>
+										<li><a href="https://wa.me/237654099666" target="_blank"><i class="fa fa-whatsapp"></i>Whatsapp</a></li>
 									</ul>
 									<ul class="list personal_social">
 										<li><a href="https://www.facebook.com/nteinpraises.ankinimbom" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -87,9 +88,10 @@
 				</div>
             </div>
         </section>
+	  </section>
         <!--================End Home Banner Area =================-->
         
-        <!--================Welcome Area =================-->
+        <!--================About Section =================-->
 	<section id="about">
         <section class="welcome_area p_120">
         	<div class="container">
@@ -460,6 +462,90 @@
         </section>
 	</section>
         <!--================End Testimonials Area =================-->
+
+
+        <section id="contact">
+
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						<div class="banner_content text-center">
+							<h2>Let's Talk</h2>
+							<div class="page_link">
+								<a href="index.html">Home</a>
+								<a href="#contact">Contact </a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Contact Area =================-->
+   
+        <section class="contact_area p_120">
+            <div class="container">
+                 <!--
+                <div id="mapBox" class="mapBox" 
+                    data-lat="40.701083" 
+                    data-lon="-74.1522848" 
+                    data-zoom="13" 
+                    data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
+                    data-mlat="40.701083"
+                    data-mlon="-74.1522848">
+                </div>
+                -->
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="contact_info">
+                            <div class="info_item">
+                                <i class="fa fa-github"></i>
+                                <h6><a href="https://github.com/Nteinpraises"  target="_blank">Ntein Praises</a></h6>
+                                <p>More Projects on Github</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="fa fa-whatsapp"></i>
+                                <h6><a href="https://wa.me/237654099666" target="_blank">Whatsapp</a></h6>
+                                <p>Let's chat on whatsapp</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-envelope"></i>
+                                <h6><a href="mailto:nteinpraises@gmail.com" target="_blank">nteinpraises@gmail.com</a></h6>
+                                <p>Send me an Email</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-right">
+                                <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
         
         <!--================Footer Area =================-->
         <footer class="footer_area p_120">
@@ -472,8 +558,8 @@
         					</div>
         					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
         					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                               Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
         				</aside>
         			</div>
         			<div class="col-lg-5 col-sm-6">
@@ -500,10 +586,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         					</div>
         					<p>Let us be social</p>
         					<ul class="list">
-        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+        						<li><a href="https://www.facebook.com/nteinpraises.ankinimbom" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="https://x.com/NAnkinimbom"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="https://www.linkedin.com/in/ntein-praises-033349271/"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://github.com/Nteinpraises"  target="_blank"><i class="fa fa-github"></i></a></li>
         					</ul>
         				</aside>
         			</div>
@@ -522,7 +608,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 
                <div class="cta-container">
 					<div class="cta-text">Let's talk 👇</div>
-					<a href="contact.html" class="cta-btn" target="_blank">✉️</a>
+					<a href="#contact" class="cta-btn" target="_blank">✉️</a>
                </div>
 
                 <style>
@@ -565,6 +651,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					margin-left: 48px;
 				}
 				
+				#date{
+					margin-top: -19px;
+				}
+
+                #home{
+					-webkit-transition: max-height 0.7s;
+                    -moz-transition: max-height  0.7s;
+                    transition: max-height  0.7s;
+				}
+                #about{
+					-webkit-transition: max-height 0.7s;
+                    -moz-transition: max-height  0.7s;
+                    transition: max-height  0.7s;
+				}
+                #services{
+					-webkit-transition: max-height 0.7s;
+                    -moz-transition: max-height  0.7s;
+                    transition: max-height  0.7s;
+				}
+                #contact{
+					-webkit-transition: max-height 0.7s;
+                    -moz-transition: max-height  0.7s;
+                    transition: max-height  0.7s;
+				}
+
                 </style>
         
 		
