@@ -99,7 +99,24 @@
         			<div class="col-lg-6">
         				<div class="welcome_text">
         					<h4>About Myself</h4>
-        					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+        					<p>
+								I am a web developer passionate about building high-performance web applications that drive results. 
+								I specialize in crafting scalable, user-centric solutions that solve real-world problems, with a focus
+								 on accessibility and seamless user experiences.
+							</p>
+        					<p>
+								At the core of everything I do is a commitment to building software that makes a difference. 
+								I strive to create solutions that are not only innovative but also intuitive, fast, and accessible to all.
+							</p>
+							<p>
+								With expertise in software as a service (SaaS), I deliver platforms that prioritize user experience, 
+								performance, and reliability. My approach ensures that users get the best possible experience, whether 
+								they're interacting with my platforms or leveraging my services.
+                            <p>Want to collaborate or learn more about how I can help solve your web development challenges? Let's connect
+							</p>
+
+							<!--c
+
         					<div class="row">
         						<div class="col-md-4">
         							<div class="wel_item">
@@ -123,8 +140,10 @@
         							</div>
         						</div>
         					</div>
+						    -->
         				</div>
         			</div>
+					<!--
         			<div class="col-lg-6">
         				<div class="tools_expert">
         					<div class="skill_main">
@@ -171,6 +190,40 @@
 							</div>
         				</div>
         			</div>
+				    -->
+					<!-- HTML -->
+					<div class="skills-container">
+					<div class="row">
+						<div class="skill-box col-md-6" id="jt">
+						<i class="bi bi-js text-warning fs-1"></i>
+						<p>JavaScript</p>
+						</div>
+						<div class="skill-box col-md-6" id="rt">
+						<i class="bi bi-react text-info fs-1"></i>
+						<p>React</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="skill-box col-md-6" id="tt">
+						<i class="bi bi-type-bold text-primary fs-1"></i>
+						<p>TypeScript</p>
+						</div>
+						<div class="skill-box col-md-6" id="nos">
+						<i class="bi bi-node-js text-success fs-1"></i>
+						<p>Node JS</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="skill-box col-md-6" id="nes">
+						<i class="bi bi-bootstrap text-dark fs-1"></i>
+						<p>Next JS</p>
+						</div>
+						<div class="skill-box col-md-6" id="vs">
+						<i class="bi bi-vue text-success fs-1"></i>
+						<p>Vue JS</p>
+						</div>
+					</div>
+					</div>
         		</div>
         	</div>
         </section>
@@ -682,6 +735,75 @@
                     transition: max-height  0.7s;
 				}
 
+
+                /* CSS for about mysef skills */
+
+				.skills-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 50%; /* take up half screen width */
+				}
+
+				.row {
+				display: flex;
+				justify-content: space-around;
+				width: 100%;
+				margin-bottom: 20px;
+				}
+
+				.skill-box {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 20px;
+				padding-top: 25px;
+				border: 0.5px solid #e5e5e5;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0,0,0,0.1);
+				width: 45%;
+				margin-top: 57px;
+				background-color: #f1f1f1;
+				transition: transform 0.2s;
+				}
+
+				.skill-box:hover{
+					transform: scale(1.05);
+					color:rgb(110, 110, 254);
+				}
+
+
+				.skill-box img {
+				width: 50px;
+				height: 50px;
+				margin-bottom: 10px;
+				}
+
+				.skill-box p{
+					font-size: 18px;
+                    font-weight: bold;
+				}
+
+                #jt{
+					margin-left: -24px;
+				}
+                #tt{
+					margin-left: -24px;
+				}
+                #nes{
+					margin-left: -24px;
+				}
+
+				#rt{
+					margin-right: -14px;
+				}
+				#nos{
+					margin-right: -14px;
+				}
+				#vs{
+					margin-right: -14px;
+				}
+				
                 </style>
         
 		
