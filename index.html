@@ -14,14 +14,14 @@
         <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
         <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="vendors/popup/magnifiipc-popup.css">
         <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
 		<!-- email service -->
 		<script type="text/javascript"
-				src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+				src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 		</script>
 		<script type="text/javascript">
 			(function(){
@@ -642,7 +642,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 text-right">
-                                <button id="serve" type="submit" value="submit" class="btn submit_btn" onclick="sendMail()">Send Message</button>
+                                <button  type="submit" value="submit" class="btn submit_btn" onclick="sendMail()">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -714,17 +714,20 @@
                 
                <div class="cta-container" >
 					<div class="cta-text">Let's talk 👇</div>
-					<a id="serve" href="#contact" class="cta-btn" >✉️</a>
+					<a  id="serve" href="#contact" class="cta-btn" >✉️</a>
                </div>
 
 
 		  <!-- Back to top button -->
 
 			   <div>
-				<button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+				<button id="back-to-top">Back to Top👆</button>
 			   </div>
 
                 <style>
+					html{
+						scroll-behavior: smooth;
+					}
 					/* Back to top button */
 					#back-to-top {
 					display: none;
@@ -883,6 +886,7 @@
 					transform: scale(1.05);
 	
 				}
+				
 				#serv:Hover{
 					transform: scale(1.16);
 				}
