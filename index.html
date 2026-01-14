@@ -20,17 +20,21 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
 		<!-- email service -->
+
 		<script type="text/javascript"
-				src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+				src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 		</script>
 		<script type="text/javascript">
-			(function(){
-				emailjs.init({
-					publicKey: "0lDHHoy67WFYSkY5f",
-				});
-			})();
+		(function(){
+			emailjs.init({
+				publicKey: "0lDHHoy67WFYSkY5f",
+			});
+		})();
 		</script>
-		<script src="js/mailjs.js"></script>
+
+
+ 
+
     </head>
 
     <body>
@@ -621,6 +625,7 @@
                                 <h6 id="serve"><a href="mailto:nteinpraises@gmail.com" target="_blank" style="color: rgb(91, 91, 232);">nteinpraises@gmail.com</a></h6>
                                 <p>Send me an Email</p>
                             </div>
+
                         </div>
                     </div>
                     <div class="col-lg-9">
@@ -642,7 +647,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 text-right">
-                                <button  type="submit" value="submit" class="btn submit_btn" onclick="sendMail()">Send Message</button>
+                                <button  type="submit" value="submit" class="btn submit_btn" >Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -944,6 +949,7 @@
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
+		<script src="js/mm.js"></script>
 		<script>
              const dateElement = document.getElementById('date');
              const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -970,6 +976,7 @@
 			window.scrollTo({ top: 0, behavior: 'smooth' });
 			}
         </script>
+		
 		
     </body>
 </html>
