@@ -243,9 +243,11 @@
 					</div>
         		</div>
         	</div>
-			<section><div><a href="" download="
-				" target="_blank"><button class="butt">Download Resume</button></a></div></section>
-        </section>
+			<!--
+			<section><div>
+				<a href="" download="" target="_blank"><button class="butt">Download Resume</button></a></div></section>
+            </section>
+			-->
 		
         <!--================End of about Area =================-->
         
@@ -629,7 +631,7 @@
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <form class="row contact_form"  method="post" id="contactForm" novalidate="novalidate">
+                        <form class="row contact_form"  method="post" id="contactForm"   >
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
@@ -726,7 +728,7 @@
 		  <!-- Back to top button -->
 
 			   <div>
-				<button id="back-to-top">Back to Top👆</button>
+				    <button id="back-to-top">Back to Top👆</button>
 			   </div>
 
                 <style>
@@ -957,11 +959,15 @@
 
             dateElement.innerHTML = currentDate;
 
-			// JavaScript for back to top button
+		</script>
 
 			
+        
+		<script>
 			
+                          // JavaScript for back to top button
 
+						  
 			const backToTopButton = document.getElementById('back-to-top');
 
 			window.addEventListener('scroll', () => {
@@ -976,6 +982,13 @@
 			window.scrollTo({ top: 0, behavior: 'smooth' });
 			}
         </script>
+		;
+
+		<script>
+			document.getElementById('back-to-top').addEventListener('click', () =>{
+				window.scrollTo({top: 0, behavior: 'smooth'});
+			});
+		</script>
 		
 		
     </body>
