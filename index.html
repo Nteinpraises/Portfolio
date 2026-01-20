@@ -634,21 +634,21 @@
                         <form class="row contact_form"  method="post" id="contactForm"   >
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message" required></textarea>
                                 </div>
                             </div>
-                            <div class="col-md-12 text-right">
+                            <div class="col-md-12 text-right" class="sm">
                                 <button  type="submit" value="submit" class="btn submit_btn" >Send Message</button>
                             </div>
                         </form>
@@ -823,11 +823,21 @@
 
                 /* CSS for about mysef skills */
 
+				
+
+
 				.skills-container {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				width: 50%; /* take up half screen width */
+				}
+
+				@media (max-width: 760px){
+					.skills-container{
+						width: 100%;
+						margin:0 auto;
+					}
 				}
 
 				.row {
