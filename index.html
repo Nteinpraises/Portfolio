@@ -180,10 +180,10 @@
         		<div class="tabs_inner">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item" id="serve">
-							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" >My Projects</a>
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" data-tab="home" >My Projects</a>
 						</li>
 						<li class="nav-item" id="serve">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" >Skills and Experience</a>
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" data-tab="profile">Skills and Experience</a>
 						</li>
 					</ul>
 					<div class="tab-content" id="myTabContent">
@@ -777,7 +777,24 @@
 			document.getElementById('back-to-top').addEventListener('click', () =>{
 				window.scrollTo({top: 0, behavior: 'smooth'});
 			});
+		</script><!--
+		<script>
+			const tabBtns = document.querySelectorAll('.nav-link');
+
+			tabBtns.forEach(btn => {
+			btn.addEventListener('click', () => {
+				// Remove active class from all buttons and sections
+				tabBtns.forEach(b => b.classList.remove('active'));
+				document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
+
+				// Add active class to clicked button and corresponding section
+				btn.classList.add('active');
+
+				const sectionId = btn.dataset.tab;
+				document.getElementById(sectionId).classList.add('active');
+			});
+			});jQuery
 		</script>
-		
+	-->
     </body>
 </html>
