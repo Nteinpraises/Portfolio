@@ -60,3 +60,4 @@ function showProject(id) {
 function hideProject() {
   document.getElementById("project-details").style.display = "none";
 }
+
