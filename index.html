@@ -19,6 +19,7 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/index.css">
 		<!-- email service -->
 
 		<script type="text/javascript"
@@ -177,6 +178,7 @@
         
         <!--================My Projects, Education and Skills
 		 Area =================-->
+		 
         <section class="mytabs_area p_120">
         	<div class="container">
         		<div class="tabs_inner">
@@ -277,7 +279,53 @@
         	</div>
         </section>
 	</section>
+	-->
         <!--================End My Tabs Area =================-->
+        
+        <!--================Start of Projects AREA =================-->
+
+
+		 <section id="projects">
+  <div class="project-grid">
+    <div class="project" onclick="showProject(1)">
+      <h3>Eterna E-commerce</h3>
+      <p>Built an e-commerce website for a client</p>
+    </div>
+    <div class="project" onclick="showProject(2)">
+      <h3>Project 2</h3>
+      <p>Short description</p>
+    </div>
+    <div class="project" onclick="showProject(3)">
+      <h3>Project 3</h3>
+      <p>Short description</p>
+    </div>
+    <div class="project" onclick="showProject(4)">
+      <h3>Project 4</h3>
+      <p>Short description</p>
+    </div>
+    <div class="project" onclick="showProject(5)">
+      <h3>Project 5</h3>
+      <p>Short description</p>
+    </div>
+    <div class="project" onclick="showProject(6)">
+      <h3>Project 6</h3>
+      <p>Short description</p>
+    </div>
+  </div>
+
+  <div id="project-details" style="display: none;">
+    <button onclick="hideProject()">Close</button>
+    <div id="project-content"></div>
+  </div>
+</section>
+
+
+
+
+
+        <!--================End OF ProjectsArea =================-->
+
+
         
         <!--================Feature Area =================-->
 	<section id="services">
@@ -779,24 +827,7 @@
 			document.getElementById('back-to-top').addEventListener('click', () =>{
 				window.scrollTo({top: 0, behavior: 'smooth'});
 			});
-		</script><!--
-		<script>
-			const tabBtns = document.querySelectorAll('.nav-link');
-
-			tabBtns.forEach(btn => {
-			btn.addEventListener('click', () => {
-				// Remove active class from all buttons and sections
-				tabBtns.forEach(b => b.classList.remove('active'));
-				document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
-
-				// Add active class to clicked button and corresponding section
-				btn.classList.add('active');
-
-				const sectionId = btn.dataset.tab;
-				document.getElementById(sectionId).classList.add('active');
-			});
-			});jQuery
 		</script>
-	-->
+		<script src="js/index.js"></script>
     </body>
 </html>
