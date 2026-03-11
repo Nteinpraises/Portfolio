@@ -61,3 +61,13 @@ function hideProject() {
   document.getElementById("project-details").style.display = "none";
 }
 
+function showProject(id) {
+  // ...
+  document.getElementById("project-details").style.display = "block";
+  document.body.style.overflow = "hidden"; /* add this */
+}
+
+function hideProject() {
+  document.getElementById("project-details").style.display = "none";
+  document.body.style.overflow = "auto"; /* add this */
+}
